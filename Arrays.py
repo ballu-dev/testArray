@@ -7,7 +7,7 @@ class Array(object):
     '''
     def __init__(self, sizeOfArray, arrayType = int):
         self.sizeOfArray = len(list(map(arrayType, range(sizeOfArray))))
-        self.arrayItems =[ar(0)] * sizeOfArray    # initialize array with zeroes
+        self.arrayItems =[ar0)] * sizeOfArray    # initialize array with zeroes
         self.arrayType = arrayType
 
     def __str__(self):
