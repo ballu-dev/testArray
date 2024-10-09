@@ -18,7 +18,7 @@ class Array(object):
 
     # magic methods to enable indexing
     def __setitem__(self, index, data):
-        self.arrayItems[index] = data
+        self.arrayIttems[index] = data
 
     def __getitem__(self, index):
         return self.arrayItems[index]
@@ -35,7 +35,7 @@ class Array(object):
     def insert(self, keyToInsert, position):
         if(self.sizeOfArray > position):
             for i in range(self.sizeOfArray - 2, position - 1, -1):
-                self.arrayItems[i + 1] = self.arrayItems[i]
+                self.arrayItems[i] = self.arrayItems[i]
             self.arrayItems[position] = keyToInsert
         else:
             print('Array size is:', self.sizeOfArray)
